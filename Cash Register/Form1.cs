@@ -62,9 +62,8 @@ namespace Cash_Register
         private void printButton_Click(object sender, EventArgs e)
         {
             //sound
-            SoundPlayer player = new SoundPlayer(Properties.Resources.receiptsound);
-
-            player.Play();
+            SoundPlayer player1 = new SoundPlayer(Properties.Resources.receiptsound);
+            player1.Play();
 
             //random system
             Random rnd = new Random();
@@ -146,8 +145,8 @@ namespace Cash_Register
                 //error message
                 if (change < 0)
                 {
-                    SoundPlayer player = new SoundPlayer(Properties.Resources.errorsound);
-                    player.Play();
+                    SoundPlayer player2 = new SoundPlayer(Properties.Resources.errorsounds);
+                    player2.Play();
                 }
                 if (change < 0) { errorLabel2.Show(); }
                 if (change < 0) { tendredInput.Text = $""; }
@@ -163,8 +162,8 @@ namespace Cash_Register
             catch
             {
                 //error message
-                SoundPlayer player = new SoundPlayer(Properties.Resources.errorsound);
-                player.Play();
+                SoundPlayer player2 = new SoundPlayer(Properties.Resources.errorsounds);
+                player2.Play();
                 tendredInput.Text = $"";
                 changeOutput.Text = $"";
                 errorLabel2.Show();
@@ -207,8 +206,8 @@ namespace Cash_Register
                 // error message
                 if (Tuna + Salmon + Shrimp > 100)
                 {
-                    SoundPlayer player = new SoundPlayer(Properties.Resources.errorsound);
-                    player.Play();
+                    SoundPlayer player2 = new SoundPlayer(Properties.Resources.errorsounds);
+                    player2.Play();
                 }
                 if (Tuna + Salmon + Shrimp > 100) { subTotalOutput.Text = $""; }
                 if (Tuna + Salmon + Shrimp > 100) { taxOutput.Text = $""; }
@@ -228,8 +227,8 @@ namespace Cash_Register
             catch
             {
                 //error message
-                SoundPlayer player = new SoundPlayer(Properties.Resources.errorsound);
-                player.Play();
+                SoundPlayer player2 = new SoundPlayer(Properties.Resources.errorsounds);
+                player2.Play();
                 numOfTunaInput.Text = $"";
                 numOfSalmonInput.Text = $"";
                 numOfShrimpInput.Text = $"";

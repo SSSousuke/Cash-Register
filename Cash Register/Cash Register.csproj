@@ -99,7 +99,7 @@
     <None Include="Resources\345055__azumarill__epson-receipt-printer4.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\327736__distillerystudio__error_03.wav" />
+    <None Include="Resources\572936__bloodpixelhero__error.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
